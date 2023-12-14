@@ -29,13 +29,48 @@ solve;
 
 
 
-# printf("{\n");
-# for {b in Bombs}
-# {
-# 	printf('"%s": ["%s", "%s"]', (b, xbomb[b], ybomb[b]));
-# 	#printf("\n");
-# }
-# printf("}\n");
+printf'{\n\t\"Bombs\": [';
+for {b in Bombs}
+{
+	printf'\"%s\",', b;
+}
+printf '],\n';
+printf '\t\"bombsize\": {\n';
+for {b in Bombs}
+{
+	printf '\t\t\"%s\": %d,\n', b, bombsize[b];
+}
+printf'\t},\n';
+printf '\t\"xbomb\": {\n';
+for {b in Bombs}
+{
+	printf '\t\t\"%s\": %d,\n', b, xbomb[b];
+}
+printf'\t},\n';
+printf '\t\"ybomb\": {\n';
+for {b in Bombs}
+{
+	printf '\t\t\"%s\": %d,\n', b, ybomb[b];
+}
+printf'\t},\n\t\"Targets\": [';
+for {t in Targets}
+{
+	printf'\"%s\",', t;
+}
+printf '],\n';
+printf '\t\"xtarget\": {\n';
+for {t in Targets}
+{
+	printf '\t\t\"%s\": %d,\n', t, xtarget[t];
+}
+printf'\t},\n';
+printf '\t\"ytarget\": {\n';
+for {t in Targets}
+{
+	printf '\t\t\"%s\": %d,\n', t, ytarget[t];
+}
+printf'\t},\n';
+printf"}\n";
 
 end;
 
