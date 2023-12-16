@@ -1,0 +1,149 @@
+Problem:    bombs
+Rows:       46
+Columns:    19 (19 integer, 15 binary)
+Non-zeros:  100
+Status:     INTEGER OPTIMAL
+Objective:  Target_hits = 4 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Bomb_hit1[T1,B1]
+                                   7                        1001 
+     2 Bomb_hit1[T1,B2]
+                                1001                        1001 
+     3 Bomb_hit1[T2,B1]
+                                   7                        1002 
+     4 Bomb_hit1[T2,B2]
+                                1001                        1002 
+     5 Bomb_hit1[T3,B1]
+                                   7                        1004 
+     6 Bomb_hit1[T3,B2]
+                                   1                        1004 
+     7 Bomb_hit1[T4,B1]
+                                   7                        1001 
+     8 Bomb_hit1[T4,B2]
+                                1001                        1001 
+     9 Bomb_hit1[T5,B1]
+                                1007                        1007 
+    10 Bomb_hit1[T5,B2]
+                                   1                        1007 
+    11 Bomb_hit2[T1,B1]
+                                   6                        1002 
+    12 Bomb_hit2[T1,B2]
+                                1001                        1002 
+    13 Bomb_hit2[T2,B1]
+                                   6                        1003 
+    14 Bomb_hit2[T2,B2]
+                                1001                        1003 
+    15 Bomb_hit2[T3,B1]
+                                   6                        1004 
+    16 Bomb_hit2[T3,B2]
+                                   1                        1004 
+    17 Bomb_hit2[T4,B1]
+                                   6                        1001 
+    18 Bomb_hit2[T4,B2]
+                                1001                        1001 
+    19 Bomb_hit2[T5,B1]
+                                1006                        1007 
+    20 Bomb_hit2[T5,B2]
+                                   1                        1007 
+    21 Bomb_hit3[T1,B1]
+                                   7         -1000               
+    22 Bomb_hit3[T1,B2]
+                                -999         -1001               
+    23 Bomb_hit3[T2,B1]
+                                   7          -999               
+    24 Bomb_hit3[T2,B2]
+                                -999         -1000               
+    25 Bomb_hit3[T3,B1]
+                                   7          -997               
+    26 Bomb_hit3[T3,B2]
+                                   1          -998               
+    27 Bomb_hit3[T4,B1]
+                                   7         -1000               
+    28 Bomb_hit3[T4,B2]
+                                -999         -1001               
+    29 Bomb_hit3[T5,B1]
+                                -993          -994               
+    30 Bomb_hit3[T5,B2]
+                                   1          -995               
+    31 Bomb_hit4[T1,B1]
+                                   6          -999               
+    32 Bomb_hit4[T1,B2]
+                                -999         -1000               
+    33 Bomb_hit4[T2,B1]
+                                   6          -998               
+    34 Bomb_hit4[T2,B2]
+                                -999          -999               
+    35 Bomb_hit4[T3,B1]
+                                   6          -997               
+    36 Bomb_hit4[T3,B2]
+                                   1          -998               
+    37 Bomb_hit4[T4,B1]
+                                   6         -1000               
+    38 Bomb_hit4[T4,B2]
+                                -999         -1001               
+    39 Bomb_hit4[T5,B1]
+                                -994          -994               
+    40 Bomb_hit4[T5,B2]
+                                   1          -995               
+    41 Target_hit[T1]
+                                -999          -999               
+    42 Target_hit[T2]
+                                -999          -999               
+    43 Target_hit[T3]
+                                   0          -999               
+    44 Target_hit[T4]
+                                -999          -999               
+    45 Target_hit[T5]
+                                -999          -999               
+    46 Target_hits                 4                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 xbomb[B1]    *              7                             
+     2 xbomb[B2]    *              1                             
+     3 ybomb[B1]    *              6                             
+     4 ybomb[B2]    *              1                             
+     5 target_hit[T1]
+                    *              1             0             1 
+     6 target_hit[T2]
+                    *              1             0             1 
+     7 target_hit[T3]
+                    *              0             0             1 
+     8 target_hit[T4]
+                    *              1             0             1 
+     9 target_hit[T5]
+                    *              1             0             1 
+    10 bomb_hit_target[B1,T1]
+                    *              0             0             1 
+    11 bomb_hit_target[B2,T1]
+                    *              1             0             1 
+    12 bomb_hit_target[B1,T2]
+                    *              0             0             1 
+    13 bomb_hit_target[B2,T2]
+                    *              1             0             1 
+    14 bomb_hit_target[B1,T3]
+                    *              0             0             1 
+    15 bomb_hit_target[B2,T3]
+                    *              0             0             1 
+    16 bomb_hit_target[B1,T4]
+                    *              0             0             1 
+    17 bomb_hit_target[B2,T4]
+                    *              1             0             1 
+    18 bomb_hit_target[B1,T5]
+                    *              1             0             1 
+    19 bomb_hit_target[B2,T5]
+                    *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
